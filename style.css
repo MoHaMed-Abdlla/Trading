@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    overflow-x: hidden;
+}
+.navbar-brand img{
+    height: 50px;
+}
+.navbar-collapse .nav-link{
+    font-size: larger;
+    font-weight: bold;
+}
+.btn-secondary{
+    color: black;
+    border: none;
+    background-color: #FFC784;
+    border-radius: 0 1rem 0 1rem;
+}
+.btn-primary{
+    color: black;
+    border: none;
+    background-color: #FE8C56;
+    border-radius: 1rem 0 1rem 0;
+}
+button {
+    transition: all .3s ease;
+}
+button:hover{
+    transform: translateY(-5px) scale(1.05);
+    background-color: transparent;
+}
+.carousel-indicators button{
+    background-color: #FE8C56 !important;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: #FE8C56;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+header .carousel-item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    height: 400px;
+}
+.carousel-item .row .col-md-8{
+    opacity: 0;
+    transform: skew(28deg, 28deg);
+    transition: all .3s ease-out;
+    transition-delay: .3s;
+    background-color: #ffc88480;
+    border-radius:  3rem 0 3rem 0;
+    width: fit-content;
+}
+.carousel-item:nth-of-type(even) .row .col-md-8{
+    background-color: #fe8b5681;
+}
+.carousel-item.active .row .col-md-8{
+    opacity: 1;
+    transform: skew(0, 0);
+}
+.card{
+    border: none;
+    overflow: hidden;
+    padding: 0;
+    transition: all .3s ease;
+}
+.card-img-overlay{
+    background-color: #fe8b56a8;
+    font-size: larger;
+} 
+.card:nth-child(1) .card-img-overlay, .card:nth-child(4) .card-img-overlay{
+    background-color: #ffc884a8;
+}
+.curver1{
+    transition: all .3s ease;
+    background-color: #fe8b56a8;
+    border-radius: 0 3rem 0 3rem;
+}
+.curver2{
+    transition: all .3s ease;
+    background-color: #ffc884a8;
+    border-radius: 3rem 0 3rem 0;
+}
+.card:hover{
+    transform: translateY(-10px) scale(1.1);
+    z-index: 10;
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.4),
+                0px 0px 8px 3px rgba(255, 255, 255, 0.5);
+}
+#vision .curver1:hover{
+    background-color: #FE8C56;
+    color: white;
+    box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.5);
+}
+#vision .curver2:hover{
+    background-color: #FFC784;
+    color: white;
+    box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.5);
+}
+#logoscarousel img{
+    height: 100px;
+    width: auto !important;
+    margin: auto;
+}
+span svg, .social-icons svg {
+    height: 60px;
+}
+footer a{
+    text-decoration: none;
+    color: #FE8C56;
+}
+

@@ -63,8 +63,8 @@ header .carousel-item{
 .carousel-item:nth-of-type(even) .row .col-md-8{
     background-color: #fe8b5681;
 }
-.carousel-item:nth-of-type(even) .row .col-md-8{
-    background-color: #fe8b5681;
+.carousel-item .row .col-md-8:hover{
+    background-color: #FFC784;
 }
 .carousel-item:nth-of-type(even) .row .col-md-8:hover{
     background-color: #FE8C56;

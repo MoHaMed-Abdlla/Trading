@@ -111,6 +111,9 @@ header .carousel-item{
 span svg, .social-icons svg {
     height: 60px;
 }
+hr {
+    width: 80%;
+}
 footer a{
     text-decoration: none;
     color: #FE8C56;

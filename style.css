@@ -15,6 +15,11 @@ body, html{
 .navbar-collapse .nav-link{
     font-size: larger;
     font-weight: bold;
+    padding-bottom: 0;
+}
+.nav-link.active{
+    border-bottom: 3px solid #FE8C56;
+    border-radius: 0 0 .3rem .3rem;
 }
 .btn-secondary{
     color: black;
@@ -55,7 +60,7 @@ header .carousel-item{
     opacity: 0;
     transform: skew(28deg, 28deg);
     transition: all .3s ease-out;
-    transition-delay: .3s;
+    transition-delay:transform .3s;
     background-color: #ffc88480;
     border-radius:  3rem 0 3rem 0;
     width: fit-content;
@@ -63,12 +68,12 @@ header .carousel-item{
 .carousel-item:nth-of-type(even) .row .col-md-8{
     background-color: #fe8b5681;
 }
-.carousel-item .row .col-md-8:hover{
-    background-color: #FFC784;
-}
 .carousel-item:nth-of-type(even) .row .col-md-8:hover{
     background-color: #FE8C56;
     color: white;
+}
+.carousel-item .row .col-md-8:hover{
+    background-color: #FFC784;
 }
 .carousel-item.active .row .col-md-8{
     opacity: 1;
@@ -99,10 +104,14 @@ header .carousel-item{
     border-radius: 3rem 0 3rem 0;
 }
 .card:hover{
-    transform: translateY(-10px) scale(1.1);
+    transform: scale(1.02);
     z-index: 10;
-    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.4),
-                0px 0px 8px 3px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
+    .card-img-overlay{
+        background-color: #fe8b56e0;
+        font-size: larger;
+        color: white;
+    } 
 }
 #vision .curver1:hover{
     background-color: #FE8C56;
